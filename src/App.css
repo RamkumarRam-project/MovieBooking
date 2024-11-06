@@ -1,0 +1,74 @@
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.add{
+  padding: 8px 10px;
+  background-color: orangered;
+  outline: none;
+  border: solid 2px #eee;
+  cursor: progress;
+  color: whitesmoke;
+  border-radius: 3px;
+}
+.view{
+  padding: 8px 10px;
+  background-color:darkgreen;
+  outline: none;
+  border: solid 2px #eee;
+  cursor: progress;
+  color: whitesmoke;
+  border-radius: 3px;
+}
+.loginform{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.payment{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#root{
+  background-color: lightyellow;
+}
+.aboutusclass{
+ 
+  background: linear-gradient(45deg,skyblue,lightgray,lightyellow,lightpink,lightgray);
+
+}
+.textcolor{
+  background: linear-gradient(360deg,white,#7f00ff,blue,lightpink);
+  color: transparent;
+  background-clip: text;
+}
+.blur{
+  background-color:white;
+  padding: 10px;
+}
+li{
+  list-style: none;
+}
+.back-sec{
+  background-color: whitesmoke;
+  border-radius: 15px;
+  border: solid 3px #eee;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.img img{
+  width:100%;
+}
+.bluetext{
+  background: linear-gradient(to right,#7f00ff,skyblue,#7f00ff);
+  color: transparent;
+  background-clip: text;
+}
+.name-sec{
+  border: solid 3px #eee;
+  padding: 10px;
+  background-color: lightyellow;
+  border-radius: 15px;
+}
