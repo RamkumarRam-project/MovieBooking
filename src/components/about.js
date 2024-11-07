@@ -8,7 +8,7 @@ function AbousUs(){
         <div className="row">
           <div className="col-md-6">
              <div className="img">
-              <img src="/images/ram1.jpg" width={'100%'}/>
+              <img src="/images/ram2.jpg" width={'100%'}/>
              </div>
           </div>
           <div className="col-md-6">

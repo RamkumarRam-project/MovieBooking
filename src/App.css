@@ -60,11 +60,13 @@ li{
 }
 .img img{
   width:100%;
+  border-radius: 10%;
 }
 .bluetext{
   background: linear-gradient(to right,#7f00ff,skyblue,#7f00ff);
   color: transparent;
   background-clip: text;
+  
 }
 .name-sec{
   border: solid 3px #eee;
@@ -72,3 +74,25 @@ li{
   background-color: lightyellow;
   border-radius: 15px;
 }
+.bag{
+  background-color:orange;
+  padding: 9px;
+  color: white;
+  border-radius: 50%;
+}
+.namedesign{
+  color: white;
+  font-weight: 400;
+  text-shadow:2px 2px 5px crimson;
+  text-transform: uppercase;
+}
+.nav-btn{
+  position: absolute;
+  right: 0
+}
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:hover {
+  background-color: lightseagreen;
+  color:white;
+  border-left: double 2px lightgreen;
+  }
+  

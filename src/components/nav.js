@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
  import { CartContext } from "./addcard";
 
@@ -7,18 +7,20 @@ import { Link } from "react-router-dom";
 function Nav(){
 
   const {count}=useContext(CartContext)
+  
+   
     return(
         <>
     
-          <nav className="navbar navbar-expand-sm navbar-dark bg-secondary position-sticky top-0 z-1">
-            <a className="navbar-brand text-danger ms-2">Movies</a>
+          <nav className="navbar navbar-expand-md navbar-dark bg-secondary  bg-gradient position-sticky top-0 z-1">
+           <h2 className="namedesign">Ram</h2>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler nav-btn"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsibleNavbar"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
               <ul className="navbar-nav ms-3">
@@ -39,9 +41,7 @@ function Nav(){
               </ul>
             </div>
             <div className="px-5 me-auto">
-              <span>
-              <i class="fa-solid fa-magnifying-glass text-white mx-2"></i>
-              </span>
+              
               <span>
               <Link to="/login">
                 <i class="fa-solid fa-user-plus text-info mx-2"></i>
@@ -49,7 +49,7 @@ function Nav(){
               </span>
               <span>
               <Link to="/viewdata">
-                   <i class="fa-solid fa-bag-shopping text-warning mx-2">
+                   <i class="fa-solid fa-bag-shopping bag mx-2">
                     {count}
                     </i>
               </Link>
@@ -58,8 +58,14 @@ function Nav(){
           </nav>
         
   
+
+
+
+
+
+    
         </>
     )
-}
+  }
 
 export default Nav;

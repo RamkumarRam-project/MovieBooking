@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 
-const LoginForm = () => {
+const LoginForm = ({ setAuthenticated }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loginMessage,setLoginMessage]=useState('')

@@ -122,10 +122,10 @@ export default function Fetchdata() {
       <div className="row">
         {data.map((item) => (
           <div className=" col-sm-12 col-md-6 col-lg-4 col-xxl-3" key={item.id}>
-            <Card
+            <Card width="100%"
               hoverable
-              style={{ width: 300, margin: '16px', backgroundColor:'lightblue'}}
-              cover={<img alt={item.name} src={item.image} />}
+              style={{ width: '100%', margin: '16px', backgroundColor:'lightblue'}}
+              cover={<img alt={item.name} src={item.image} width={"100%"}/>}
             >
               <Meta title={item.name} />
               {/* <p>Release Date: {item.releasedate}</p> */}
