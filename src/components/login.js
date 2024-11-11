@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 
-const LoginForm = ({ setAuthenticated }) => {
+const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loginMessage,setLoginMessage]=useState('')
@@ -12,18 +12,20 @@ const LoginForm = ({ setAuthenticated }) => {
 
   
 
-  const userLogin=()=>{
-    if(email=='ramkumar04@gmail.com' && password=='ram2004'){
-      setLoginMessage('login success')
-      navigate('/home') 
-      toast.success(`Welcome To Ram Cart `)
+  const userLogin = () => {
+    if (email === 'ramkumar04@gmail.com' && password === 'ram2004') {
+      toast.success('Welcome To Ram Cart');
+      navigate('/home');
+    } else {
+     
+      toast.error('Incorrect Password');
     }
-    else{
-      setLoginMessage('login fail')
-      toast.error(`Inconnet Password`)
-    }
-  }
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    userLogin();
+  };
   // const handleSubmit = (e) => {
   //   e.preventDefault();
     

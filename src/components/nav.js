@@ -1,11 +1,14 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
- import { CartContext } from "./addcard";
+import { useContext,  } from "react";
+import { Link, } from "react-router-dom";
+import { CartContext } from "./addcard";
 
 
 
 function Nav(){
+  
+  
 
+  
   const {count}=useContext(CartContext)
   
    
@@ -25,7 +28,7 @@ function Nav(){
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
               <ul className="navbar-nav ms-3">
                 <li className="nav-item">
-                <Link to="/home" className="nav-link">Home</Link>
+                <Link to="/" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/about" className="nav-link"> 
@@ -40,21 +43,23 @@ function Nav(){
                 </li>
               </ul>
             </div>
-            <div className="px-5 me-auto">
-              
-              <span>
-              <Link to="/login">
-                <i class="fa-solid fa-user-plus text-info mx-2"></i>
-              </Link>
-              </span>
-              <span>
-              <Link to="/viewdata">
-                   <i class="fa-solid fa-bag-shopping bag mx-2">
-                    {count}
-                    </i>
-              </Link>
-              </span>
-            </div>
+            <div className="d-flex align-items-center px-5 me-auto">
+        
+          
+       
+          <Link to="/login" className="nav-link text-info">
+            <i style={{color:"#28D146"}} className="fa-solid fa-user-plus mx-2"></i>
+          </Link>
+       
+        <Link to="/viewdata" className="nav-link position-relative">
+        <i class="fa-solid fa-cart-shopping nav-shop"></i>
+         
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {count}
+            </span>
+         
+        </Link>
+      </div>
           </nav>
         
   

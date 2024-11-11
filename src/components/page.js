@@ -96,7 +96,7 @@ export default function Fetchdata() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [count, setCount] = useState('');
+  
 
   const {addToCart}=useContext(CartContext)
   useEffect(() => {
@@ -112,19 +112,19 @@ export default function Fetchdata() {
       });
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <h6 className='view-load'>RAM WEBSITE...</h6>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
     <>
    
-    <div className='container'>
+    <div className='container mt-5'>
       <div className="row">
         {data.map((item) => (
-          <div className=" col-sm-12 col-md-6 col-lg-4 col-xxl-3" key={item.id}>
+          <div className="col-sm-12 col-md-6 col-lg-4 col-xxl-3" key={item.id}>
             <Card width="100%"
               hoverable
-              style={{ width: '100%', margin: '16px', backgroundColor:'lightblue'}}
+              style={{ width: '100%', marginBottom:"15%", backgroundColor:'lightblue'}}
               cover={<img alt={item.name} src={item.image} width={"100%"}/>}
             >
               <Meta title={item.name} />

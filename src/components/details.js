@@ -16,27 +16,32 @@ function Details(){
    return(
     <>
       
-         <div className="container">
-            <div className="row">
+         <div className="container mt-5 datailes-container">
+            <div className="row ">
                 
-                  <div className="col-md-6">
+                  <div className="col-sm-12 col-md-6 col-lg-6">
                     
                     {datas ? ( 
                         <img src={datas.image} alt="error" width={'100%'} height={'80%'}/>
                     ) :(
-                        <p>loading...</p>
+                        <h4 className="view-load">RAM CARD...</h4>
                     )
                     }
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-sm-6 col-md-6 col-lg-6">
                     {datas?(
-                        <>
-                            <h2 className="text-danger">{datas.name}</h2>
-                            <h2 className="text-info">{datas.director}</h2>
+                        <p className="details-content-border">
+                            <h2 className="text-info">{datas.name}</h2>
                             <p className="text-secondary">{datas.description}</p>
-                        </>):
+
+                            <div className="view-buttom">
+                            <h6 style={{color:""}}><span style={{color:"red"}}>Budget:</span>{datas.budget}</h6>
+                            <h6 style={{color:""}}><span style={{color:"red"}}> Releasedate:</span>{datas.releasedate}</h6>
+                            <h6 style={{color:""}}><span style={{color:"red"}}> Director:</span>{datas.director}</h6>
+                            </div>
+                        </p>):
                         (
-                            <p>loading</p>
+                            <p className="view-load">WELCOME...</p>
                         )
                     }
                   </div>

@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .buttons{
   display: flex;
   justify-content: space-between;
@@ -26,12 +32,8 @@
   background-position: center center;
 }
 .payment{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-#root{
-  background-color: lightyellow;
+  background-color: rgb(255, 251, 213);
+  margin-top: 10%;
 }
 .aboutusclass{
  
@@ -95,4 +97,82 @@ li{
   color:white;
   border-left: double 2px lightgreen;
   }
+.view-load{
+  font-weight: 500;
+  color: dodgerblue;
+  text-shadow:2px 2px 5px crimson;
+}
+.details-content-border{
+  border:double 4px #eee;
+  padding: 10px;
   
+}
+.datailes-container{
+  background-color:lightyellow;
+  
+}
+.view-buttom{
+  background-color:rgb(255, 209, 192);
+  padding: 15px;
+  border-radius: 3px;
+  border: solid 2px #eee;
+}
+#root{
+  background-color: rgb(246, 211, 147);
+}
+html{
+  width: 100%;
+}
+.cards-item img{
+  background-size: cover;
+  background-position: center center;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width:767px) {
+  .viewcard-page {
+    width:100%;
+    background-color:white;
+  }
+}
+@media (max-width:575px) {
+  .viewcard-secomd {
+    width:50%;
+    border-right: solid 3px #eee;
+  }
+}
+.view-icon{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background-color: lightpink;
+  
+}
+.view-up,.view-up{
+  border: none;
+  outline: none;
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+}
+.quantity-show{
+  font-size: 25px;
+  color: white;
+  text-shadow: 5px 5px 5px lightcoral;
+}
+.view-btn{
+  border: none;
+  outline: none;
+  background-color: skyblue;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.nav-shop{
+  color: orange;
+  background-color: rgb(242, 242, 160);
+  padding: 10px;
+}
