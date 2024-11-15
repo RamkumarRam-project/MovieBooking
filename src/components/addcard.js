@@ -15,21 +15,20 @@ export const CartProvider = ({ children }) => {
     const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
   
     if (!isItemInCart) {
-      // If item is not in cart, add it with a quantity of 1
-      setCartItems((prevItems) => [
-        ...prevItems,
-        { ...item, quantity: 1 }
-      ]);
-      setTotalAmount((prevTotal) => prevTotal + item.ticketprice);
+      setCartItems((prevItems) => [...prevItems, { ...item, quantity: 1 }]);
   
-      // Show toast notification for adding to cart
-      toast.success(`${item.name} added to cart!`);
+      // Add ticket price safely to total amount
+      setTotalAmount((prevTotal) => {
+        const numericPrice = parseFloat(item.ticketPrice.replace(/[^\d.-]/g, ""));
+        return prevTotal + numericPrice;
+      });
+  
+      toast.success(`${item.title} Added!`);
     } else {
-      // If item is already in cart, increase quantity match the and not inculude
       increaseQty(item.id);
     }
   };
-  //increment decrement function
+  
   const increaseQty = (id) => {
     setCartItems((prevItems) =>
       prevItems.map((cartItem) =>
@@ -38,38 +37,61 @@ export const CartProvider = ({ children }) => {
           : cartItem
       )
     );
+  
     // Update total amount after increasing quantity
-    setTotalAmount((prevTotal) =>
-      prevTotal + cartItems.find((item) => item.id === id).ticketprice
-    );
+    setTotalAmount((prevTotal) => {
+      const item = cartItems.find((item) => item.id === id);
+  
+      if (item) {
+        const numericPrice = parseFloat(item.ticketPrice.replace(/[^\d.-]/g, ""));
+        return prevTotal + numericPrice;
+      }
+  
+      return prevTotal;
+    });
   };
+  
   
   // Decrement quantity of a specific product in cart
-  const decreaseQty = (id) => {
-    setCartItems((prevItems) =>
-      prevItems.map((cartItem) =>
-        cartItem.id === id && cartItem.quantity > 1
-          ? { ...cartItem, quantity: cartItem.quantity - 1 }
-          : cartItem
-      )
-    );
-    // Update total amount after decreasing quantity
-    const item = cartItems.find((item) => item.id === id);
-  setTotalAmount((prevTotal) =>
-    Math.max(0, prevTotal - item.ticketprice)
+const decreaseQty = (id) => {
+  setCartItems((prevItems) =>
+    prevItems.map((cartItem) =>
+      cartItem.id === id && cartItem.quantity > 1
+        ? { ...cartItem, quantity: cartItem.quantity - 1 }
+        : cartItem
+    )
   );
-};
-  
-  // Remove item from cart
-  const removeFromCart = (itemId) => {
-    const itemToRemove = cartItems.find((item) => item.id === itemId);
-    if (itemToRemove) {
-      setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
-      setTotalAmount((prevTotal) => prevTotal - itemToRemove.ticketprice);
-      // Show toast notification for removing from cart
-      toast.error(`Deleted`);
+
+  // Update total amount after decreasing quantity
+  setTotalAmount((prevTotal) => {
+    const item = cartItems.find((item) => item.id === id);
+
+    if (item) {
+      const numericPrice = parseFloat(item.ticketPrice.replace(/[^\d.-]/g, ""));
+      return Math.max(0, prevTotal - numericPrice);
     }
-  };
+
+    return prevTotal;
+  });
+};
+
+// Remove item from cart
+const removeFromCart = (itemId) => {
+  const itemToRemove = cartItems.find((item) => item.id === itemId);
+  if (itemToRemove) {
+    setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
+
+    // Update total amount after removing the item
+    setTotalAmount((prevTotal) => {
+      const numericPrice = parseFloat(itemToRemove.ticketPrice.replace(/[^\d.-]/g, ""));
+      return Math.max(0, prevTotal - numericPrice);
+    });
+
+    // Show toast notification for removing from cart
+    toast.error(`Deleted`);
+  }
+};
+
 
   return (
     <CartContext.Provider value={{ cartItems, totalAmount, count, addToCart,increaseQty,decreaseQty, removeFromCart }}>

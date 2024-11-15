@@ -1,0 +1,1075 @@
+[
+    
+        {
+            "id": 1,
+            "title": "Vikram",
+            "description": "A high-octane action thriller following an undercover cop's mission.",
+            "hero": "Kamal Haasan",
+            "heroine": "Andrea Jeremiah",
+            "budget": "₹150 crore",
+            "releaseDate": "2022-06-03",
+            "releaseYear": "2022",
+            "director": "Lokesh Kanagaraj",
+            "ticketPrice": "₹150",
+            "rating": 8.5,
+            "showtimes": [
+    "12:30 PM - Rohini Silver Screens, Chennai, Tamil Nadu",
+    "4:30 PM - Woodlands Cinemas, Chennai, Tamil Nadu",
+    "8:30 PM - KG Cinemas, Coimbatore, Tamil Nadu"
+],
+            "image": "https://i.pinimg.com/736x/a3/a8/72/a3a872bedc6afe040e29f54cd19dc967.jpg  "
+        },
+        {
+            "id": 2,
+            "title": "Master",
+            "description": "A professor with an unruly past confronts a dangerous criminal in a juvenile school.",
+            "hero": "Vijay",
+            "heroine": "Malavika Mohanan",
+            "budget": "₹135 crore",
+            "releaseDate": "2021-01-13",
+            "releaseYear": "2021",
+            "director": "Lokesh Kanagaraj",
+            "ticketPrice": "₹120",
+            "rating": 7.3,
+            "showtimes": [
+        "11:00 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+        "2:00 PM - Inox, Madurai, Tamil Nadu",
+        "6:00 PM - PVR Cinemas, Salem, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/bd/a1/41/bda1412eb07263373a08479e9c84ab59.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Soorarai Pottru",
+            "description": "Inspired by real events, this movie tells the story of a man's dream to start an airline.",
+            "hero": "Suriya",
+            "heroine": "Aparna Balamurali",
+            "budget": "₹25 crore",
+            "releaseDate": "2020-11-12",
+            "releaseYear": "2020",
+            "director": "Sudha Kongara",
+            "ticketPrice": "₹100",
+            "rating": 6.8,
+            "showtimes": [
+        "10:30 AM - Sangam Cinemas, Chennai, Tamil Nadu",
+        "1:30 PM - Abirami Mega Mall, Chennai, Tamil Nadu",
+        "7:00 PM - Cinepolis, Tiruchirappalli, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/08/36/1d/08361dd2b41c2fcae86900c8abb0a8a0.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Bigil",
+            "description": "A man returns to coach a women's football team, fulfilling his late friend's dream.",
+            "hero": "Vijay",
+            "heroine": "Nayanthara",
+            "budget": "₹180 crore",
+            "releaseDate": "2019-10-25",
+            "releaseYear": "2019",
+            "director": "Atlee",
+            "ticketPrice": "₹150",
+            "rating": 9.2,
+            "showtimes": [
+        "9:00 AM - Rakki Cinemas, Ambattur, Tamil Nadu",
+        "12:30 PM - Priya Complex, Erode, Tamil Nadu",
+        "5:30 PM - Vettri Theatres, Chennai, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/53/a2/a6/53a2a687461fd8e306240c01652bf3a7.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Kaithi",
+            "description": "A convict on parole aids a group of officers to take down a drug cartel.",
+            "hero": "Karthi",
+            "heroine": "Narain",
+            "budget": "₹25 crore",
+            "releaseDate": "2019-10-25",
+            "releaseYear": "2019",
+            "director": "Lokesh Kanagaraj",
+            "ticketPrice": "₹100",
+            "rating": 7.6,
+            "showtimes": [
+        "11:15 AM - SDC Cinemas, Salem, Tamil Nadu",
+        "3:00 PM - ARRS Multiplex, Salem, Tamil Nadu",
+        "8:00 PM - Mayajaal Multiplex, Chennai, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/74/45/54/744554907ec82c10a420d5ddb6161c87.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Petta",
+            "description": "A hostel warden's hidden past is revealed as he faces off against a crime boss.",
+            "hero": "Rajinikanth",
+            "heroine": "Simran",
+            "budget": "₹160 crore",
+            "releaseDate": "2019-01-10",
+            "releaseYear": "2019",
+            "director": "Karthik Subbaraj",
+            "ticketPrice": "₹120",
+            "rating": 5.4,
+            "showtimes": [
+        "10:00 AM - Rohini Silver Screens, Chennai, Tamil Nadu",
+        "1:45 PM - Woodlands Cinemas, Chennai, Tamil Nadu",
+        "5:15 PM - KG Cinemas, Coimbatore, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/d2/2e/75/d22e7522a1a2c1d06549c73a1ebb95ef.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Darbar",
+            "description": "An unconventional cop pursues a crime syndicate and faces his nemesis.",
+            "hero": "Rajinikanth",
+            "heroine": "Nayanthara",
+            "budget": "₹200 crore",
+            "releaseDate": "2020-01-09",
+            "releaseYear": "2020",
+            "director": "A.R. Murugadoss",
+            "ticketPrice": "₹150",
+            "rating": 3.1,
+            "showtimes": [
+        "9:30 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+        "2:30 PM - Inox, Madurai, Tamil Nadu",
+        "6:45 PM - PVR Cinemas, Salem, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/f6/35/fd/f635fda7eac6e9315006ecfba15db2b6.jpg"
+        },
+        {
+            "id": 8,
+            "title": "NGK",
+            "description": "A political thriller following a man's journey to expose corruption.",
+            "hero": "Suriya",
+            "heroine": "Sai Pallavi",
+            "budget": "₹50 crore",
+            "releaseDate": "2019-05-31",
+            "releaseYear": "2019",
+            "director": "Selvaraghavan",
+            "ticketPrice": "₹100",
+            "rating": 5.0,
+            "showtimes": [
+        "8:00 AM - Sangam Cinemas, Chennai, Tamil Nadu",
+        "1:00 PM - Abirami Mega Mall, Chennai, Tamil Nadu",
+        "7:30 PM - Cinepolis, Tiruchirappalli, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/79/fe/ec/79feecb020821ce9b9575a0312e7fec0.jpg"
+        },
+        {
+            "id":9,
+            "title": "RRR",
+            "description": "Two legendary revolutionaries and their journey far away from home, fighting for their country in the 1920s.",
+            "hero": "N. T. Rama Rao Jr.",
+            "heroine": "Alia Bhatt",
+            "budget": "₹400 crore",
+            "releaseDate": "2022-03-25",
+            "releaseYear": "2022",
+            "director": "S. S. Rajamouli",
+            "ticketPrice": "₹150",
+            "rating": 8.8,
+            "showtimes": [
+                "10:00 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+                "1:30 PM - INOX, Coimbatore, Tamil Nadu",
+                "5:30 PM - PVR Cinemas, Hyderabad, Telangana"
+            ],
+            "image": "https://i.pinimg.com/736x/2c/39/71/2c39714f4d162fcfa3f1ddab98572da7.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Mersal",
+            "description": "A magician-turned-doctor exposes medical corruption in an engaging narrative.",
+            "hero": "Vijay",
+            "heroine": "Samantha",
+            "budget": "₹120 crore",
+            "releaseDate": "2017-10-18",
+            "releaseYear": "2017",
+            "director": "Atlee",
+            "ticketPrice": "₹130",
+            "rating": 8.5,
+            "showtimes": [
+        "10:15 AM - Rakki Cinemas, Ambattur, Tamil Nadu",
+        "1:45 PM - Priya Complex, Erode, Tamil Nadu",
+        "6:00 PM - Vettri Theatres, Chennai, Tamil Nadu"
+    ],
+            "image": "https://i.pinimg.com/736x/1b/fb/36/1bfb36dbafeeb91ba34384d01d564f3b.jpg"
+        }
+    ,
+    {
+        "id": 11,
+        "title": "Irumbu Thirai",
+        "description": "A thriller that explores cybercrime and data theft.",
+        "hero": "Vishal",
+        "heroine": "Samantha Ruth Prabhu",
+        "budget": "₹20 crore",
+        "releaseDate": "2018-05-11",
+        "releaseYear": 2018,
+        "director": "P. S. Mithran",
+        "ticketPrice": "₹100",
+        "rating": 7.5,
+        "showtimes": [
+        "9:00 AM - Rohini Silver Screens, Chennai, Tamil Nadu",
+        "12:30 PM - Woodlands Cinemas, Chennai, Tamil Nadu",
+        "8:30 PM - KG Cinemas, Coimbatore, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/ba/10/bb/ba10bbfd4fba09e651c7823787cdf5af.jpg"
+    },
+    {
+        "id": 13,
+        "title": "2.0",
+        "description": "A battle between a scientist's robot and a powerful alien force.",
+        "hero": "Rajinikanth",
+        "heroine": "Amy Jackson",
+        "budget": "₹570 crore",
+        "releaseDate": "2018-11-29",
+        "releaseYear": 2018,
+        "director": "S. Shankar",
+        "ticketPrice": "₹180",
+        "rating": 8.0,
+        "showtimes": [
+        "9:30 AM - Sangam Cinemas, Chennai, Tamil Nadu",
+        "1:30 PM - Abirami Mega Mall, Chennai, Tamil Nadu",
+        "5:30 PM - Cinepolis, Tiruchirappalli, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/ee/d4/21/eed421e512418b736598deaae0aeaaa7.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Jailer",
+        "description": "An ex-cop turned jailer faces an old rival in his pursuit of justice.",
+        "hero": "Rajinikanth",
+        "heroine": "Ramya Krishnan",
+        "budget": "₹240 crore",
+        "releaseDate": "2023-08-10",
+        "releaseYear": 2023,
+        "director": "Nelson Dilipkumar",
+        "ticketPrice": "₹160",
+        "rating": 8.1,
+        "showtimes": [
+        "10:00 AM - Rakki Cinemas, Ambattur, Tamil Nadu",
+        "12:45 PM - Priya Complex, Erode, Tamil Nadu",
+        "6:15 PM - Vettri Theatres, Chennai, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/64/65/d8/6465d8f562072ee6fe7ea6dce06cea4d.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Doctor",
+        "description": "A dark comedy following a doctor’s quest to rescue his fiancée's kidnapped niece.",
+        "hero": "Sivakarthikeyan",
+        "heroine": "Priyanka Arul Mohan",
+        "budget": "₹45 crore",
+        "releaseDate": "2021-10-09",
+        "releaseYear": 2021,
+        "director": "Nelson Dilipkumar",
+        "ticketPrice": "₹110",
+        "rating": 7.8,
+       "showtimes": [
+        "11:30 AM - SDC Cinemas, Salem, Tamil Nadu",
+        "3:45 PM - ARRS Multiplex, Salem, Tamil Nadu",
+        "8:15 PM - Mayajaal Multiplex, Chennai, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/d7/f9/18/d7f91876e81d7de0b68661f60d016e0e.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Asuran",
+        "description": "A gritty drama depicting a father's fight to protect his family.",
+        "hero": "Dhanush",
+        "heroine": "Manju Warrier",
+        "budget": "₹20 crore",
+        "releaseDate": "2019-10-04",
+        "releaseYear": 2019,
+        "director": "Vetrimaaran",
+        "ticketPrice": "₹100",
+        "rating": 8.6,
+        "showtimes": [
+        "10:30 AM - Rohini Silver Screens, Chennai, Tamil Nadu",
+        "2:30 PM - Woodlands Cinemas, Chennai, Tamil Nadu",
+        "6:45 PM - KG Cinemas, Coimbatore, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/ab/f7/7d/abf77d132f6660cd50010ac784cd411c.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Sarkar",
+        "description": "A businessman takes on corrupt politicians in a gripping political thriller.",
+        "hero": "Vijay",
+        "heroine": "Keerthy Suresh",
+        "budget": "₹115 crore",
+        "releaseDate": "2018-11-06",
+        "releaseYear": 2018,
+        "director": "A.R. Murugadoss",
+        "ticketPrice": "₹140",
+        "rating": 7.4,
+        "showtimes": [
+            "9:15 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "1:15 PM - Inox, Madurai, Tamil Nadu",
+            "7:15 PM - PVR Cinemas, Salem, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/f9/3f/04/f93f0413e5f5fc9d1474e26215adedd0.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Kabali",
+        "description": "An aged gangster returns to reclaim his lost life and honor.",
+        "hero": "Rajinikanth",
+        "heroine": "Radhika Apte",
+        "budget": "₹100 crore",
+        "releaseDate": "2016-07-22",
+        "releaseYear": 2016,
+        "director": "Pa. Ranjith",
+        "ticketPrice": "₹120",
+        "rating": 7.0,
+        "showtimes": [
+        "10:45 AM - Rakki Cinemas, Ambattur, Tamil Nadu",
+        "2:15 PM - Priya Complex, Erode, Tamil Nadu",
+        "6:30 PM - Vettri Theatres, Chennai, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/b4/33/ce/b433ce614c436eccf6ae7fa5b9d5868f.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Theri",
+        "description": "An undercover cop’s fight for justice and family.",
+        "hero": "Vijay",
+        "heroine": "Samantha Ruth Prabhu",
+        "budget": "₹75 crore",
+        "releaseDate": "2016-04-14",
+        "releaseYear": 2016,
+        "director": "Atlee",
+        "ticketPrice": "₹100",
+        "rating": 7.6,
+        "showtimes": [
+        "9:30 AM - SDC Cinemas, Salem, Tamil Nadu",
+        "12:00 PM - ARRS Multiplex, Salem, Tamil Nadu",
+        "5:45 PM - Mayajaal Multiplex, Chennai, Tamil Nadu"
+    ],
+        "image": "https://i.pinimg.com/736x/54/0a/35/540a350790f46df4c0e8642b727c6095.jpg"
+    },
+    {
+        "id": 21,
+        "title": "Baahubali: The Beginning",
+        "description": "A daring young man's quest leads him to a kingdom in turmoil, as he uncovers his heritage and battles against tyranny to restore balance.",
+        "hero": "Prabhas",
+        "heroine": "Tamannaah",
+        "budget": "₹180 crore",
+        "releaseDate": "2015-07-10",
+        "releaseYear": 2015,
+        "director": "S.S. Rajamouli",
+        "ticketPrice": "₹150",
+        "rating": 8.1,
+        "showtimes": [
+            "11:15 AM - GK Cinemas, Coimbatore, Tamil Nadu",
+            "2:45 PM - INOX, Salem, Tamil Nadu",
+            "7:15 PM - Cosmo Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/5a/be/e0/5abee0d6941e15be1c5c59cb9b065564.jpg"
+    },
+    {
+        "id": 22,
+        "title": "Baahubali: The Conclusion",
+        "description": "The legendary hero’s journey reaches its peak as secrets are unveiled, and the ultimate battle to reclaim justice and honor is fought.",
+        "hero": "Prabhas",
+        "heroine": "Anushka Shetty",
+        "budget": "₹250 crore",
+        "releaseDate": "2017-04-28",
+        "releaseYear": 2017,
+        "director": "S.S. Rajamouli",
+        "ticketPrice": "₹180",
+        "rating": 8.3,
+        "showtimes": [
+            "10:45 AM - Grand Cinemas, Trichy, Tamil Nadu",
+            "3:15 PM - Devi Cineplex, Chennai, Tamil Nadu",
+            "6:30 PM - Ambiga Cinemas, Erode, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/46/6f/1f/466f1f61310dda36827ca9084eba61c4.jpg"
+    },
+    
+    {
+        "id": 24,
+        "title": "Maari",
+        "description": "A fearless rowdy with a love for pigeons takes on a tough cop, leading to a rivalry full of humor, action, and suspense.",
+        "hero": "Dhanush",
+        "heroine": "Kajal Aggarwal",
+        "budget": "₹30 crore",
+        "releaseDate": "2015-07-17",
+        "releaseYear": 2015,
+        "director": "Balaji Mohan",
+        "ticketPrice": "₹100",
+        "rating": 5.8,
+        "showtimes": [
+            "10:00 AM - Phoenix Cinemas, Chennai, Tamil Nadu",
+            "2:00 PM - Meenakshi Cinemas, Madurai, Tamil Nadu",
+            "6:30 PM - Vijaya Cinemas, Tirunelveli, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/1a/c9/9d/1ac99d56bf5f4a224d5dacca715b66fb.jpg"
+    },
+    {
+        "id": 25,
+        "title": "Aramm",
+        "description": "A principled collector goes up against the system to support marginalized communities, fighting for justice against corruption and social inequities.",
+        "hero": "Nayanthara",
+        "heroine": "N/A",
+        "budget": "₹15 crore",
+        "releaseDate": "2017-11-10",
+        "releaseYear": 2017,
+        "director": "Gopi Nainar",
+        "ticketPrice": "₹90",
+        "rating": 7.4,
+        "showtimes": [
+            "9:15 AM - Periyar Cinemas, Erode, Tamil Nadu",
+            "1:30 PM - Vetri Cinemas, Chennai, Tamil Nadu",
+            "5:45 PM - Alankar Cinemas, Trichy, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/85/2a/49/852a49c59ac2af7d1cd5d6ed558b96c6.jpg"
+    },
+    {
+        "id": 26,
+        "title": "Kaatru Veliyidai",
+        "description": "A complex romance unfolds as an Indian Air Force pilot and a doctor navigate their tumultuous love amidst war and personal differences.",
+        "hero": "Karthi",
+        "heroine": "Aditi Rao Hydari",
+        "budget": "₹55 crore",
+        "releaseDate": "2017-04-07",
+        "releaseYear": 2017,
+        "director": "Mani Ratnam",
+        "ticketPrice": "₹110",
+        "rating": 6.1,
+        "showtimes": [
+            "10:30 AM - Fame Cinemas, Chennai, Tamil Nadu",
+            "1:45 PM - GeeKay Cinemas, Coimbatore, Tamil Nadu",
+            "6:00 PM - Big Cinemas, Salem, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/c2/93/36/c2933635425aeed4690ae45d0788b809.jpg"
+    },
+    
+    
+    {
+        "id": 31,
+        "title": "Sathya",
+        "description": "A man unravels the mystery behind his girlfriend's disappearance.",
+        "hero": "Sibi Sathyaraj",
+        "heroine": "Remya Nambeesan",
+        "budget": "₹10 crore",
+        "releaseDate": "2017-12-08",
+        "releaseYear": 2017,
+        "director": "Pradeep Krishnamoorthy",
+        "ticketPrice": "₹90",
+        "rating": 6.5,
+        "showtimes": [
+            "10:30 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "3:00 PM - INOX, Coimbatore, Tamil Nadu",
+            "6:15 PM - Abirami Mega Mall, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/0d/b3/99/0db3993236f8b5bb54275be443853770.jpg"
+    },
+    {
+        "id": 32,
+        "title": "Imaikkaa Nodigal",
+        "description": "A suspense thriller about a serial killer who targets high-profile individuals.",
+        "hero": "Atharvaa",
+        "heroine": "Nayanthara",
+        "budget": "₹25 crore",
+        "releaseDate": "2018-08-30",
+        "releaseYear": 2018,
+        "director": "R. Ajay Gnanamuthu",
+        "ticketPrice": "₹110",
+        "rating": 7.2,
+        "showtimes": [
+            "11:00 AM - Fame Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - AGS Cinemas, Coimbatore, Tamil Nadu",
+            "6:45 PM - Mayajaal, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/0a/ac/49/0aac4923a814642f375e05e8681b9a26.jpg"
+    },
+    {
+        "id": 33,
+        "title": "96",
+        "description": "A bittersweet romance between high school sweethearts who reunite after years.",
+        "hero": "Vijay Sethupathi",
+        "heroine": "Trisha",
+        "budget": "₹15 crore",
+        "releaseDate": "2018-10-04",
+        "releaseYear": 2018,
+        "director": "C. Prem Kumar",
+        "ticketPrice": "₹100",
+        "rating": 8.6,
+        "showtimes": [
+            "10:15 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "1:45 PM - INOX, Madurai, Tamil Nadu",
+            "5:30 PM - PVR Cinemas, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/71/32/ed/7132ed7dcfa899e35b7d91c0824f0b3d.jpg"
+    },
+    {
+        "id": 34,
+        "title": "Comali",
+        "description": "A man wakes up from a coma after 16 years and tries to adapt to the world around him.",
+        "hero": "Jayam Ravi",
+        "heroine": "Kajal Aggarwal",
+        "budget": "₹30 crore",
+        "releaseDate": "2019-08-15",
+        "releaseYear": 2019,
+        "director": "Pradeep Ranganathan",
+        "ticketPrice": "₹110",
+        "rating": 6.9,
+        "showtimes": [
+            "11:30 AM - Luxe Cinemas, Chennai, Tamil Nadu",
+            "3:00 PM - PVR, Chennai, Tamil Nadu",
+            "7:15 PM - AGS Cinemas, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/47/00/eb/4700ebe2e746620fb126c9e2d3fcf351.jpg"
+    },
+    
+    {
+        "id": 37,
+        "title": "Yennai Arindhaal",
+        "description": "A cop's journey through life as he tries to balance personal and professional battles.",
+        "hero": "Ajith Kumar",
+        "heroine": "Trisha",
+        "budget": "₹50 crore",
+        "releaseDate": "2015-02-05",
+        "releaseYear": 2015,
+        "director": "Gautham Menon",
+        "ticketPrice": "₹120",
+        "rating": 7.1,
+        "showtimes": [
+            "10:30 AM - Abirami Mega Mall, Chennai, Tamil Nadu",
+            "2:15 PM - INOX, Trichy, Tamil Nadu",
+            "5:45 PM - PVR Cinemas, Salem, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/66/ee/55/66ee55a6d74af78d9d5257ee96aa1781.jpg"
+    },
+    {
+        "id": 38,
+        "title": "Thuppakki",
+        "description": "A soldier takes on a sleeper cell network planning attacks across the country.",
+        "hero": "Vijay",
+        "heroine": "Kajal Aggarwal",
+        "budget": "₹100 crore",
+        "releaseDate": "2012-11-13",
+        "releaseYear": 2012,
+        "director": "A.R. Murugadoss",
+        "ticketPrice": "₹140",
+        "rating": 8.0,
+        "showtimes": [
+            "11:00 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:45 PM - AGS Cinemas, Chennai, Tamil Nadu",
+            "6:30 PM - Luxe Cinemas, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/9e/74/5a/9e745a2baaf2d01be72ae4fd4c26c6a9.jpg"
+    },
+    {
+        "id": 39,
+        "title": "Kaththi",
+        "description": "A man who looks identical to a social activist takes on corrupt businessmen.",
+        "hero": "Vijay",
+        "heroine": "Samantha Ruth Prabhu",
+        "budget": "₹70 crore",
+        "releaseDate": "2014-10-22",
+        "releaseYear": 2014,
+        "director": "A.R. Murugadoss",
+        "ticketPrice": "₹130",
+        "rating": 7.9,
+        "showtimes": [
+            "11:15 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "3:00 PM - PVR Cinemas, Madurai, Tamil Nadu",
+            "7:00 PM - INOX, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/c8/6d/87/c86d87cc28b21bd14728c998fb2a4e73.jpg"
+    },
+    {
+        "id": 40,
+        "title": "Pariyerum Perumal",
+        "description": "A raw drama tackling caste-based discrimination and societal issues.",
+        "hero": "Kathir",
+        "heroine": "Anandhi",
+        "budget": "₹5 crore",
+        "releaseDate": "2018-09-28",
+        "releaseYear": 2018,
+        "director": "Mari Selvaraj",
+        "ticketPrice": "₹80",
+        "rating": 8.3,
+        "showtimes": [
+            "10:00 AM - AGS Cinemas, Chennai, Tamil Nadu",
+            "1:30 PM - INOX, Salem, Tamil Nadu",
+            "5:00 PM - PVR Cinemas, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/25/01/36/250136229b9505df8dbed924d5f3e80e.jpg"
+    },
+    {
+        "id": 41,
+        "title": "Maanaadu",
+        "description": "A man caught in a time loop must prevent a political conspiracy.",
+        "hero": "Silambarasan",
+        "heroine": "Kalyani Priyadarshan",
+        "budget": "₹30 crore",
+        "releaseDate": "2021-11-25",
+        "releaseYear": 2021,
+        "director": "Venkat Prabhu",
+        "ticketPrice": "₹120",
+        "rating": 8.1,
+        "showtimes": [
+            "11:00 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - AGS Cinemas, Madurai, Tamil Nadu",
+            "6:00 PM - INOX, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/20/30/a6/2030a672f4027ece47b37c4b15d125a4.jpg"
+    },
+    {
+        "id": 42,
+        "title": "Vikram Vedha",
+        "description": "A cop and a gangster play mind games in a twisted cat-and-mouse chase.",
+        "hero": "Madhavan",
+        "heroine": "Shraddha Srinath",
+        "budget": "₹11 crore",
+        "releaseDate": "2017-07-21",
+        "releaseYear": 2017,
+        "director": "Pushkar-Gayathri",
+        "ticketPrice": "₹100",
+        "rating": 8.4,
+        "showtimes": [
+            "10:30 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "1:00 PM - S2 Cinemas, Salem, Tamil Nadu",
+            "4:30 PM - Sree Saravana Cinemas, Tiruchirappalli, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/34/d5/f2/34d5f21f83f46852103a8f5b1078dd80.jpg"
+    },
+    {
+        "id": 49,
+        "title": "Sarpatta Parambarai",
+        "description": "A young man's passion for boxing challenges the socio-political landscape.",
+        "hero": "Arya",
+        "heroine": "Dushara Vijayan",
+        "budget": "₹15 crore",
+        "releaseDate": "2021-07-22",
+        "releaseYear": 2021,
+        "director": "Pa. Ranjith",
+        "ticketPrice": "₹90",
+        "rating": 8.6,
+        "showtimes": [
+            "10:00 AM - Kasi Theater, Chennai, Tamil Nadu",
+            "1:30 PM - Sri Sakthi Cinemas, Coimbatore, Tamil Nadu",
+            "5:00 PM - Ramba Cinemas, Erode, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/56/df/fd/56dffd65fe00d6d093888f79406b5eae.jpg"
+    },
+    {
+        "id": 50,
+        "title": "Jai Bhim",
+        "description": "A lawyer fights for justice for an oppressed community.",
+        "hero": "Suriya",
+        "heroine": "Lijomol Jose",
+        "budget": "₹20 crore",
+        "releaseDate": "2021-11-02",
+        "releaseYear": 2021,
+        "director": "T.J. Gnanavel",
+        "ticketPrice": "₹110",
+        "rating": 9.2,
+        "showtimes": [
+            "9:30 AM - Devi Cineplex, Chennai, Tamil Nadu",
+            "1:00 PM - ARRS Multiplex, Salem, Tamil Nadu",
+            "4:30 PM - Sathyam Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/69/1f/a8/691fa8959552a4b1e48f27cf33152b90.jpg"
+    },
+    {
+        "id": 54,
+        "title": "Enemy",
+        "description": "Two childhood friends turn into enemies due to a dangerous mission.",
+        "hero": "Vishal",
+        "heroine": "Mirnalini Ravi",
+        "budget": "₹70 crore",
+        "releaseDate": "2021-11-04",
+        "releaseYear": 2021,
+        "director": "Anand Shankar",
+        "ticketPrice": "₹130",
+        "rating": 7.5,
+        "showtimes": [
+            "10:45 AM - INOX, Chennai, Tamil Nadu",
+            "2:15 PM - AGS Cinemas, Madurai, Tamil Nadu",
+            "5:30 PM - Mayajaal, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/d5/bf/3f/d5bf3fba63170bcf4aa88594756f1866.jpg"
+    },
+    
+    {
+        "id": 56,
+        "title": "Etharkkum Thunindhavan",
+        "description": "A man stands up for justice to save his village.",
+        "hero": "Suriya",
+        "heroine": "Priyanka Arul Mohan",
+        "budget": "₹70 crore",
+        "releaseDate": "2022-03-10",
+        "releaseYear": 2022,
+        "director": "Pandiraj",
+        "ticketPrice": "₹130",
+        "rating": 7.8,
+        "showtimes": [
+            "11:30 AM - Kasi Theater, Chennai, Tamil Nadu",
+            "3:00 PM - Gopuram Cinemas, Salem, Tamil Nadu",
+            "6:00 PM - Sree Karpaga Cinemas, Kanchipuram, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/70/f6/b4/70f6b46cdd5bcd05a27f59d95e908490.jpg"
+    },
+    {
+        "id": 57,
+        "title": "Kaathuvaakula Rendu Kaadhal",
+        "description": "A love triangle between a man and two women.",
+        "hero": "Vijay Sethupathi",
+        "heroine": "Nayanthara",
+        "budget": "₹30 crore",
+        "releaseDate": "2022-04-28",
+        "releaseYear": 2022,
+        "director": "Vignesh Shivan",
+        "ticketPrice": "₹100",
+        "rating": 7.1,
+        "showtimes": [
+            "10:15 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "1:30 PM - SPI Cinemas, Coimbatore, Tamil Nadu",
+            "4:45 PM - INOX, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/97/77/7e/97777efcfc752ac2d6ce4284d883919c.jpg"
+    },
+    {
+        "id": 58,
+        "title": "Don",
+        "description": "A lighthearted story about a rebellious college student's journey.",
+        "hero": "Sivakarthikeyan",
+        "heroine": "Priyanka Arul Mohan",
+        "budget": "₹50 crore",
+        "releaseDate": "2022-05-13",
+        "releaseYear": 2022,
+        "director": "Cibi Chakaravarthi",
+        "ticketPrice": "₹120",
+        "rating": 7.6,
+        "showtimes": [
+            "9:45 AM - AGS Cinemas, Chennai, Tamil Nadu",
+            "2:00 PM - S2 Cinemas, Coimbatore, Tamil Nadu",
+            "5:15 PM - PVR Cinemas, Salem, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/28/50/fe/2850fe0668b068ad02f9671e5cc4c257.jpg"
+    },
+    {
+        "id": 59,
+        "title": "Beast",
+        "description": "A former RAW agent faces off with terrorists during a mall siege.",
+        "hero": "Vijay",
+        "heroine": "Pooja Hegde",
+        "budget": "₹150 crore",
+        "releaseDate": "2022-04-13",
+        "releaseYear": 2022,
+        "director": "Nelson",
+        "ticketPrice": "₹140",
+        "rating": 5.8,
+        "showtimes": [
+            "12:00 PM - PVR Cinemas, Chennai, Tamil Nadu",
+            "3:30 PM - INOX, Coimbatore, Tamil Nadu",
+            "6:30 PM - AGS Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/c6/e1/46/c6e146248a81db8e79195f2ec26555af.jpg"
+    },
+    
+    {
+        "id": 61,
+        "title": "Vendhu Thanindhathu Kaadu",
+        "description": "A young man's journey from a rural village to the criminal underworld of Mumbai.",
+        "hero": "Silambarasan",
+        "heroine": "Siddhi Idnani",
+        "budget": "₹30 crore",
+        "releaseDate": "2022-09-15",
+        "releaseYear": 2022,
+        "director": "Gautham Menon",
+        "ticketPrice": "₹120",
+        "rating": 7.8,
+        "showtimes": [
+            "11:00 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "3:00 PM - AGS Cinemas, Madurai, Tamil Nadu",
+            "6:00 PM - INOX, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/1b/3c/cc/1b3ccc2daae9634f4118d9e8332d9d3a.jpg"
+    },
+    {
+        "id": 62,
+        "title": "Ponniyin Selvan: Part I",
+        "description": "An adaptation of Kalki's epic novel, set in the Chola dynasty.",
+        "hero": "Karthi",
+        "heroine": "Trisha Krishnan",
+        "budget": "₹500 crore",
+        "releaseDate": "2022-09-30",
+        "releaseYear": 2022,
+        "director": "Mani Ratnam",
+        "ticketPrice": "₹150",
+        "rating": 8.5,
+        "showtimes": [
+            "10:30 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - S2 Cinemas, Salem, Tamil Nadu",
+            "5:00 PM - Sree Saravana Cinemas, Tiruchirappalli, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/ee/14/6b/ee146bae6e3084ee86bfc9d5c044c480.jpg"
+    },
+    {
+        "id": 63,
+        "title": "Love Today",
+        "description": "A modern-day romantic comedy exploring the challenges of young love.",
+        "hero": "Pradeep Ranganathan",
+        "heroine": "Ivana",
+        "budget": "₹10 crore",
+        "releaseDate": "2022-11-04",
+        "releaseYear": 2022,
+        "director": "Pradeep Ranganathan",
+        "ticketPrice": "₹100",
+        "rating": 8.0,
+        "showtimes": [
+            "11:15 AM - INOX, Chennai, Tamil Nadu",
+            "3:15 PM - SPI Cinemas, Coimbatore, Tamil Nadu",
+            "6:15 PM - AGS Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/f6/92/69/f6926924b320e3b0edda9eb9b61b2dfc.jpg"
+    },
+    {
+        "id": 69,
+        "title": "Thiruchitrambalam",
+        "description": "A lighthearted drama about family, friendship, and love.",
+        "hero": "Dhanush",
+        "heroine": "Nithya Menen",
+        "budget": "₹30 crore",
+        "releaseDate": "2022-08-18",
+        "releaseYear": 2022,
+        "director": "Mithran Jawahar",
+        "ticketPrice": "₹110",
+        "rating": 7.6,
+        "showtimes": [
+            "10:45 AM - Devi Cineplex, Chennai, Tamil Nadu",
+            "2:00 PM - ARRS Multiplex, Salem, Tamil Nadu",
+            "5:30 PM - Sathyam Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/f7/f0/94/f7f0945296c3a55a3e8894e67bc7ffe6.jpg"
+    },
+    {
+        "id": 70,
+        "title": "Viduthalai Part I",
+        "description": "A young cop is involved in a gritty mission against a Maoist leader.",
+        "hero": "Soori",
+        "heroine": "Bhavani Sre",
+        "budget": "₹35 crore",
+        "releaseDate": "2023-03-31",
+        "releaseYear": 2023,
+        "director": "Vetrimaaran",
+        "ticketPrice": "₹120",
+        "rating": 8.4,
+        "showtimes": [
+            "10:00 AM - Kasi Theater, Chennai, Tamil Nadu",
+            "1:30 PM - Sri Sakthi Cinemas, Coimbatore, Tamil Nadu",
+            "5:00 PM - Ramba Cinemas, Erode, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/5e/c1/77/5ec177c368af041ddf5834a22e0a7803.jpg"
+    },
+    {
+        "id": 71,
+        "title": "Vaathi",
+        "description": "A teacher in a rural school fights for students' rights.",
+        "hero": "Dhanush",
+        "heroine": "Samyuktha Menon",
+        "budget": "₹25 crore",
+        "releaseDate": "2023-02-17",
+        "releaseYear": 2023,
+        "director": "Venky Atluri",
+        "ticketPrice": "₹110",
+        "rating": 7.9,
+        "showtimes": [
+            "11:30 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - SPI Cinemas, Coimbatore, Tamil Nadu",
+            "6:00 PM - INOX, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/f2/d9/dd/f2d9ddd75d2993c233852647f243c0dd.jpg"
+    },
+    {
+        "id": 75,
+        "title": "Thunivu",
+        "description": "A group of misfits stages a bank heist for a greater cause.",
+        "hero": "Ajith Kumar",
+        "heroine": "Manju Warrier",
+        "budget": "₹120 crore",
+        "releaseDate": "2023-01-11",
+        "releaseYear": 2023,
+        "director": "H. Vinoth",
+        "ticketPrice": "₹140",
+        "rating": 7.4,
+        "showtimes": [
+            "9:30 AM - Devi Cineplex, Chennai, Tamil Nadu",
+            "1:30 PM - AGS Cinemas, Salem, Tamil Nadu",
+            "5:30 PM - Sathyam Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/1c/24/b2/1c24b256d8e862c704b0da3a1ed5f078.jpg"
+    },
+    {
+        "id": 76,
+        "title": "Varisu",
+        "description": "A son's journey to fulfill his father's legacy amidst a family conflict.",
+        "hero": "Vijay",
+        "heroine": "Rashmika Mandanna",
+        "budget": "₹150 crore",
+        "releaseDate": "2023-01-11",
+        "releaseYear": 2023,
+        "director": "Vamshi Paidipally",
+        "ticketPrice": "₹150",
+        "rating": 7.2,
+        "showtimes": [
+            "10:00 AM - INOX, Chennai, Tamil Nadu",
+            "1:30 PM - AGS Cinemas, Madurai, Tamil Nadu",
+            "5:30 PM - Mayajaal, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/53/25/54/532554dbb4045abcb6c5a08c9891a74c.jpg"
+    },
+    {
+        "id": 77,
+        "title": "Run Baby Run",
+        "description": "A suspense thriller following a young man on a dangerous chase.",
+        "hero": "RJ Balaji",
+        "heroine": "Aishwarya Rajesh",
+        "budget": "₹15 crore",
+        "releaseDate": "2023-02-03",
+        "releaseYear": 2023,
+        "director": "Jiyen Krishnakumar",
+        "ticketPrice": "₹100",
+        "rating": 7.1,
+        "showtimes": [
+            "10:45 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:15 PM - S2 Cinemas, Coimbatore, Tamil Nadu",
+            "5:30 PM - INOX, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/42/49/60/4249606dbed0d8d7d0eb07bb400a35c0.jpg"
+    },
+    
+    {
+        "id": 80,
+        "title": "LGM - Lets Get Married",
+        "description": "A rom-com that explores the twists and turns in a relationship.",
+        "hero": "Harish Kalyan",
+        "heroine": "Ivana",
+        "budget": "₹15 crore",
+        "releaseDate": "2023-04-07",
+        "releaseYear": 2023,
+        "director": "Ramesh Thamilmani",
+        "ticketPrice": "₹100",
+        "rating": 7.2,
+        "showtimes": [
+            "11:30 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "3:00 PM - AGS Cinemas, Madurai, Tamil Nadu",
+            "6:30 PM - INOX, Coimbatore, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/8b/d6/5a/8bd65a0c95df53738ad45e59d9b5760e.jpg"
+    },
+    {
+        "id": 81,
+        "title": "Ayalaan",
+        "description": "An alien arrives on Earth and bonds with a human amidst chaotic events.",
+        "hero": "Sivakarthikeyan",
+        "heroine": "Rakul Preet Singh",
+        "budget": "₹80 crore",
+        "releaseDate": "2024-01-12",
+        "releaseYear": 2024,
+        "director": "R. Ravikumar",
+        "ticketPrice": "₹130",
+        "rating": 8.1,
+        "showtimes": [
+            "10:45 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:15 PM - SPI Cinemas, Salem, Tamil Nadu",
+            "5:45 PM - Sree Saravana Cinemas, Tiruchirappalli, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/ab/c0/da/abc0da90429f5f5df9a818f30c38f6ef.jpg"
+    },
+    {
+        "id": 84,
+        "title": "Indian 2",
+        "description": "A vigilante continues his mission to cleanse society of corruption.",
+        "hero": "Kamal Haasan",
+        "heroine": "Kajal Aggarwal",
+        "budget": "₹200 crore",
+        "releaseDate": "2024-04-14",
+        "releaseYear": 2024,
+        "director": "S. Shankar",
+        "ticketPrice": "₹150",
+        "rating": 8.6,
+        "showtimes": [
+            "11:00 AM - INOX, Chennai, Tamil Nadu",
+            "3:00 PM - Sathyam Cinemas, Coimbatore, Tamil Nadu",
+            "6:30 PM - AGS Cinemas, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/a0/72/ce/a072ce541b41e7920b1c9de1953b630c.jpg"
+    },
+    {
+        "id": 85,
+        "title": "Leo",
+        "description": "A family man with a mysterious past gets pulled into a world of violence.",
+        "hero": "Vijay",
+        "heroine": "Trisha Krishnan",
+        "budget": "₹250 crore",
+        "releaseDate": "2023-10-19",
+        "releaseYear": 2023,
+        "director": "Lokesh Kanagaraj",
+        "ticketPrice": "₹160",
+        "rating": 8.4,
+        "showtimes": [
+            "10:30 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - Devi Cineplex, Salem, Tamil Nadu",
+            "6:00 PM - Mayajaal, Chennai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/1a/85/fc/1a85fc08c07154c0e942e771a1d758c6.jpg"
+    },
+    {
+        "id": 87,
+        "title": "Pathu Thala",
+        "description": "An undercover cop infiltrates a criminal empire led by a powerful gangster.",
+        "hero": "Silambarasan",
+        "heroine": "Gautham Karthik",
+        "budget": "₹45 crore",
+        "releaseDate": "2023-03-30",
+        "releaseYear": 2023,
+        "director": "Obeli N. Krishna",
+        "ticketPrice": "₹120",
+        "rating": 7.8,
+        "showtimes": [
+            "11:15 AM - Kasi Theater, Chennai, Tamil Nadu",
+            "3:15 PM - AGS Cinemas, Coimbatore, Tamil Nadu",
+            "6:30 PM - Sree Sakthi Cinemas, Erode, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/be/e5/d1/bee5d132161c0fc5852aef35130c2c53.jpg"
+    },
+    {
+        "id": 93,
+        "title": "Dhruva Natchathiram",
+        "description": "An action-packed thriller about a spy and his mission to protect his country.",
+        "hero": "Vikram",
+        "heroine": "Aishwarya Rajesh",
+        "budget": "₹90 crore",
+        "releaseDate": "2023-11-30",
+        "releaseYear": 2023,
+        "director": "Gautham Menon",
+        "ticketPrice": "₹130",
+        "rating": 8.0,
+        "showtimes": [
+            "10:30 AM - Sathyam Cinemas, Chennai, Tamil Nadu",
+            "2:30 PM - S2 Cinemas, Coimbatore, Tamil Nadu",
+            "6:00 PM - INOX, Madurai, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/80/41/68/804168d721987ce194d61d12f5f55089.jpg"
+    },
+    {
+        "id": 94,
+        "title": "Kanguva",
+        "description": "A warrior embarks on a quest filled with mystery and adventure.",
+        "hero": "Suriya",
+        "heroine": "Disha Patani",
+        "budget": "₹180 crore",
+        "releaseDate": "2024-10-10",
+        "releaseYear": 2024,
+        "director": "Siva",
+        "ticketPrice": "₹150",
+        "rating": 8.5,
+        "showtimes": [
+            "10:00 AM - PVR Cinemas, Chennai, Tamil Nadu",
+            "1:30 PM - S2 Cinemas, Coimbatore, Tamil Nadu",
+            "5:00 PM - AGS Cinemas, Salem, Tamil Nadu"
+        ],
+        "image": "https://i.pinimg.com/736x/98/66/0d/98660da66d46a427f86c3fb5ca7632f0.jpg"
+    }
+]

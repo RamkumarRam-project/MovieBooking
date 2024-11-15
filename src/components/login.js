@@ -4,20 +4,17 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 
-const LoginForm = () => {
+const LoginForm = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loginMessage,setLoginMessage]=useState('')
-  const navigate = useNavigate() ;
-
-  
+  const navigate = useNavigate();
 
   const userLogin = () => {
     if (email === 'ramkumar04@gmail.com' && password === 'ram2004') {
-      toast.success('Welcome To Ram Cart');
-      navigate('/home');
+      toast.success('Welcome to RAM CINEMAS!');
+      setIsLoggedIn(true); // Update the login state
+      navigate('/'); // Redirect to the home page
     } else {
-     
       toast.error('Incorrect Password');
     }
   };
@@ -36,18 +33,18 @@ const LoginForm = () => {
   return (
 
    <>
-
-    <div className="d-flex justify-content-center align-items-center vh-100  loginform" style={{backgroundImage:"url(https://cdn.pixabay.com/photo/2016/10/10/09/00/spectacular-room-1727890_1280.jpg)"}}>
+    <div className="d-flex justify-content-center align-items-center vh-100  loginform" style={{backgroundImage:"url(https://i.pinimg.com/736x/5c/35/f9/5c35f9b24285eeabe58b654e9d393bc4.jpg)"}}>
       <div className="card p-4 shadow-lg" style={{ width: '400px' }}>
+      <h4 className='cinema-title-login text-center'>RAM__CINEMAS</h4>
         <h2 className="text-center mb-4">Login</h2>
-        <form >
+        <form onSubmit={handleSubmit} >
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address</label>
             <input
               type="email"
               className="form-control"
               id="email"
-              placeholder="Enter your email"
+              placeholder="ramkumar04@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -59,19 +56,19 @@ const LoginForm = () => {
               type="password"
               className="form-control"
               id="password"
-              placeholder="Enter your password"
+              placeholder="ram2004"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <button onClick={userLogin} type="submit" className="btn btn-primary w-100">Login</button>
-          {loginMessage &&<p>{loginMessage}</p>}
+          <button onClick={userLogin} type="submit" className="btn btn-primary mb-3 w-100">Login</button>
+          
         </form>
-        <GoogleLogin
+        <GoogleLogin 
   onSuccess={credentialResponse => {
     console.log(credentialResponse);
-    navigate('/home')
+    navigate('/')
   }}
   onError={() => {
     console.log('Login Failed');

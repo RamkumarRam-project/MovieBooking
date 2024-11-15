@@ -9,10 +9,10 @@ const CartView = () => {
   
 
   return (
-   <div className='container payment'>
-     <h2>Shopping Cart</h2>
-     <p>Total Items: {count}</p>
-     <h3 style={{color:"red"}}>Total Amount: ${totalAmount}</h3>
+   <div className='container payment text-center'>
+     <h2 style={{color:"rgb(31, 142, 186)"}} >Shopping Cart</h2>
+     <p style={{color:" rgb(31, 142, 186)",fontSize:"18px"}}> Total Items: {count}</p>
+     <h3 style={{color:" #ff5252"}} className='fs-4 total-display'>Total Amount:{totalAmount}</h3>
     <div className='row'>
    
       
@@ -29,10 +29,10 @@ const CartView = () => {
               </div>
             
               <div className='col-sm-6 viewcard-secomd '>
-            <p className='fs-3' style={{color:"darkblue"}}>{item.name}</p>
-            <p style={{color:"darkblue"}}>Price: ${item.ticketprice}</p>
+            <p className='fs-3' style={{color:"darkblue"}}>{item.title}</p>
+            <p style={{color:"darkblue"}}>Price: ${item.ticketPrice}</p>
           <div className='view-icon'>
-            <button className='btn bg-danger text-white' onClick={() => removeFromCart(item.id)}><i class="fa-solid fa-trash-can"></i></button>
+            <button className='btn bg-danger text-white' onClick={() => removeFromCart(item.id)}><i class="fa-solid fa-trash-can "></i></button>
             <button className='view-up' onClick={()=>decreaseQty(item.id)}><span ><i class="fa-solid fa-angle-down"></i></span></button>
              <p className='fw-bold quantity-show'>{item.quantity}</p>
            <button className='view-up' onClick={()=>increaseQty(item.id)}><i class="fa-solid fa-angle-up"></i></button>
