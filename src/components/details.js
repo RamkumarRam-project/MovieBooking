@@ -22,42 +22,60 @@ function Details(){
    return(
     <>
       
-      <div className="container mt-5 details-container">
-      <div className="row">
-        <p key={movie.id} ></p>
-          {/* Left column: Movie Image */}
-          <div className="col-sm-12 col-md-6 col-lg-6">
-            <img
-              src={movie.image}
-              alt={movie.name}
-              width={'100%'}
-              height={'80%'}
-            />
-          </div>
-
-          {/* Right column: Movie Details */}
-          <div className=" col-md-6 col-lg-6">
-            <p className="details-content-border">
-                
-              <h2 className="movie-title">{movie.title}({movie.releaseYear})</h2>
-              <h5 className='title-sec '>{movie.hero},{movie.heroine}</h5>
-              <p className="text-secondary"><span className='fw-bold text-dark'>About Me: </span>{movie.description}</p>
-               
-              <div className="view-buttom">
-                <h6>
-                  <span style={{ color: 'red' }}>Budget:</span> {movie.budget}
-                </h6>
-                <h6>
-                  <span style={{ color: 'red' }}>Release Date:</span> {movie.releaseDate}
-                </h6>
-                <h6>
-                  <span style={{ color: 'red' }}>Director:</span> {movie.director}
-                </h6>
-              </div>
-            </p>
-          </div>
-        </div>
+     <div className="container mt-5 details-container">
+  <div className="row g-4 align-items-center">
+    {/* Left Column: Movie Image */}
+    <div className="col-sm-12 col-md-6">
+      <div className="movie-image-container shadow-lg rounded">
+        <img
+          src={movie.image}
+          alt={movie.name}
+          className="img-fluid rounded"
+          style={{
+            width: "100%",
+            objectFit: "cover",
+          }}
+        />
       </div>
+    </div>
+
+    {/* Right Column: Movie Details */}
+    <div className="col-sm-12 col-md-6">
+      <div className="details-content p-4 shadow rounded">
+        <h2 className="movie-title text-primary">
+          {movie.title} ({movie.releaseYear})
+        </h2>
+        <h5 className="title-sec text-muted">
+          Starring: {movie.hero} & {movie.heroine}
+        </h5>
+        <p className="mt-3">
+          <span className="fw-bold">About:</span> {movie.description}
+        </p>
+        <div className="movie-info mt-4">
+          <h6>
+            <span className="text-danger">Budget:</span> {movie.budget}
+          </h6>
+          <h6>
+            <span className="text-danger">Release Date:</span> {movie.releaseDate}
+          </h6>
+          <h6>
+            <span className="text-danger">Director:</span> {movie.director}
+          </h6>
+        </div>
+        <button
+          className="btn btn-primary mt-4 px-5"
+          style={{
+            fontWeight: "bold",
+            borderRadius: "30px",
+          }}
+        >
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
    
                     
     </>

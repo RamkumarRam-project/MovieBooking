@@ -12,6 +12,10 @@ import ContactUs from './components/contact';
 import { CartProvider } from './components/addcard';
 import { Toaster } from 'react-hot-toast';
 import { useState } from 'react';
+import UserDashboard from './components/userboard';
+import TamilMovies from './components/moviestamil';
+
+
 
 
 
@@ -25,8 +29,9 @@ function App() {
         <Toaster position="top-center" reverseOrder={false} />
 
         <Router>
-          {!isLoggedIn ? (
-            <Routes>
+          {!isLoggedIn ? (   
+               //isLoggedIn default this state is false ,!isLoggedIn use not the condition is true that run be this statment and login complete will be change the state agian  setIsLoggedIn(true) true and login complete instial state value is true,!isLoggedIn agian this is false and run main components
+            <Routes>               
               <Route path="*" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
             </Routes>
           ) : (
@@ -36,8 +41,10 @@ function App() {
                 <Route path="/" element={<Fetchdata search={search} />} />
                 <Route path="/about" element={<AbousUs/>} />
                 <Route path="/contact" element={<ContactUs />} />
+                <Route path='/moviestamil' element={<TamilMovies/>}/>
                 <Route path="/viewdata" element={<CartView />} />
                 <Route path="/details/:id" element={<Details />} />
+                <Route path="/userboard" element={<UserDashboard/>}/>
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
               <Footer />

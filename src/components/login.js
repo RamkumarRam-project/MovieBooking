@@ -33,13 +33,13 @@ const LoginForm = ({ setIsLoggedIn }) => {
   return (
 
    <>
-    <div className="d-flex justify-content-center align-items-center vh-100  loginform" style={{backgroundImage:"url(https://i.pinimg.com/736x/5c/35/f9/5c35f9b24285eeabe58b654e9d393bc4.jpg)"}}>
+    <div className="d-flex justify-content-center align-items-center vh-100  loginform">
       <div className="card p-4 shadow-lg" style={{ width: '400px' }}>
-      <h4 className='cinema-title-login text-center'>RAM__CINEMAS</h4>
-        <h2 className="text-center mb-4">Login</h2>
+      
+        <h2 className="text-center mb-4">RAM CINEMAS</h2>
         <form onSubmit={handleSubmit} >
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email address</label>
+            <label htmlFor="email" className="form-label">Email address:</label>
             <input
               type="email"
               className="form-control"
@@ -51,7 +51,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="password" className="form-label">Password</label>
+            <label htmlFor="password" className="form-label">Password:</label>
             <input
               type="password"
               className="form-control"

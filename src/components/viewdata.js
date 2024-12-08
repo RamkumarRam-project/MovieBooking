@@ -9,48 +9,70 @@ const CartView = () => {
   
 
   return (
-   <div className='container payment text-center'>
-     <h2 style={{color:"rgb(31, 142, 186)"}} >Shopping Cart</h2>
-     <p style={{color:" rgb(31, 142, 186)",fontSize:"18px"}}> Total Items: {count}</p>
-     <h3 style={{color:" #ff5252"}} className='fs-4 total-display'>Total Amount:{totalAmount}</h3>
-    <div className='row'>
-   
-      
-        {cartItems.map((item) => (
-          
-        <div className='viewcard-page col-sm-12'>
-          <p key={item.id} > </p>
-          
-            <div className='row border-bottom border-3 '>
-              <div className='col-sm-6 viewcard-secomd'>
-            <div className='card border-0 bg-transparent cards-item'>
-               <img src={item.image} alt='view' height={"300px"}/>
-               </div>
+    <div className="container payment text-center py-4">
+    <p className="text-info fs-5">Total Items: {count}</p>
+    <h3 className="text-danger fs-4 mb-4">Total Amount: ${totalAmount}</h3>
+    
+    <div className="row gy-4">
+      {cartItems.map((item) => (
+        <div className="col-12" key={item.id}>
+          <div className="card cart-card shadow-sm p-3">
+            <div className="row g-4 align-items-center">
+              {/* Image Section */}
+              <div className="col-sm-5">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="img-fluid rounded"
+                  style={{
+                    maxHeight: "250px",
+                    objectFit: "cover",
+                    width: "100%",
+                  }}
+                />
               </div>
-            
-              <div className='col-sm-6 viewcard-secomd '>
-            <p className='fs-3' style={{color:"darkblue"}}>{item.title}</p>
-            <p style={{color:"darkblue"}}>Price: ${item.ticketPrice}</p>
-          <div className='view-icon'>
-            <button className='btn bg-danger text-white' onClick={() => removeFromCart(item.id)}><i class="fa-solid fa-trash-can "></i></button>
-            <button className='view-up' onClick={()=>decreaseQty(item.id)}><span ><i class="fa-solid fa-angle-down"></i></span></button>
-             <p className='fw-bold quantity-show'>{item.quantity}</p>
-           <button className='view-up' onClick={()=>increaseQty(item.id)}><i class="fa-solid fa-angle-up"></i></button>
-           </div>
-              <button className='view-btn'>Booking</button>
+  
+              {/* Details Section */}
+              <div className="col-sm-7">
+                <div className="text-start">
+                  <h4 className="text-primary mb-3">{item.title}</h4>
+                  <p className="mb-2">
+                    <span className="text-dark fw-bold">Price:</span> ${item.ticketPrice}
+                  </p>
+                  <div className="d-flex align-items-center gap-2">
+                    {/* Quantity Control */}
+                    <button
+                      className="btn btn-outline-secondary"
+                      onClick={() => decreaseQty(item.id)}
+                    >
+                      <i className="fa-solid fa-minus"></i>
+                    </button>
+                    <span className="fw-bold fs-5">{item.quantity}</span>
+                    <button
+                      className="btn btn-outline-secondary"
+                      onClick={() => increaseQty(item.id)}
+                    >
+                      <i className="fa-solid fa-plus"></i>
+                    </button>
+                  </div>
+                  <div className="mt-3">
+                    <button
+                      className="btn btn-danger me-2"
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      <i className="fa-solid fa-trash-can"></i> Remove
+                    </button>
+                    <button className="btn btn-primary">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
-         
-       
-      
-          
-        ))}
-      
-      
+      ))}
     </div>
-    </div>
-    
+  </div>
+  
     
   );
 };

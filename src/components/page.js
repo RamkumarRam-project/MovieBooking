@@ -90,6 +90,7 @@ import { Card } from 'antd';
 import { useContext } from 'react';
 import { CartContext } from './addcard';
 import movies from './Movies.json';
+
 const { Meta } = Card;
 
 export default function Fetchdata({search}) {
@@ -129,41 +130,106 @@ export default function Fetchdata({search}) {
     setOpen(null)
 }
   return (
-    <>    <div className='home-top'>
+    <>  
+      {/* <div className='home-top'>
            <div  className='top-name text-center mt-3'>
              <h4 className='cinema-title'>RAM__CINEMAS</h4>
            </div>  
            </div>
-    
+     */}
      
-    <div className='container mt-5 home-color'>
-      <div className="row home-pages">
-        {alldata.map((item) => (
-          <div className="col-sm-12 col-md-6 col-lg-4 col-xxl-3 home-page " key={item.id}>
-            <Card   width="100%"  
-              hoverable
-              style={{ width: '100%', marginBottom:"12%", backgroundColor:'lightblue'}}
-              cover={<img className='show-times' alt={item.title} src={item.image} width={"100%"}/>}
-            > 
-            
-            
-            <i onClick={()=>handleshow(item.id)} class="fa-solid fa-tower-broadcast fs-5 blinking-icon"></i>
-            <div className=' card-content'>
-              
-              <Meta title={item.title}/>
-              <p>{item.ticketPrice}</p>
-              </div>
-              <div className='buttons'>
-                <button className=' btn btn-danger addto-cart w-100' onClick={()=>addToCart(item)}>Add</button>
-                <Link to={`/details/${item.id}`}>
-                  <button className=' btn btn-primary view-card  w-100'>View</button>
-                </Link>
-              </div>
-            </Card>
+     <div className="container mt-5">
+  <div className="row gy-4">
+    {alldata.map((item) => (
+      <div
+        className="col-sm-12 col-md-6 movie-cards col-lg-4 col-xxl-3"
+        key={item.id}
+      >
+        <div
+          className="card border-0 shadow-sm movie-card position-relative"
+          style={{
+            borderRadius: "15px",
+            overflow: "hidden",
+            background: "linear-gradient(to bottom, #ffffff, #f0f0f0)",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
+          }}
+        >
+          {/* Image Section */}
+          <div className="card-image position-relative">
+            <img
+              alt={item.title}
+              src={item.image}
+              className="img-fluid"
+              style={{
+                width: "100%",
+                height: "220px",
+                aspectRatio:"1/1",
+                borderTopLeftRadius: "15px",
+                borderTopRightRadius: "15px",
+               
+              }}
+            />
+            <i
+              onClick={() => handleshow(item.id)}
+              className="fa-solid fa-broadcast-tower blinking-icon"
+              style={{
+                position: "absolute",
+                top: "15px",
+                right: "15px",
+                background: "rgba(255, 255, 255, 0.4)",
+                padding: "6px",
+                borderRadius: "50%",
+                cursor: "pointer",
+               
+              }}
+            ></i>
           </div>
-        ))};
+
+          {/* Content Section */}
+          <div className="p-4 text-center">
+            <h5
+              className="text-dark text-truncate"
+              style={{ fontWeight: "bold", marginBottom: "10px" }}
+            >
+              {item.title}
+            </h5>
+            <p className="text-muted mb-3">
+              Ticket Price:{" "}
+              <span className="text-success fw-bold">{item.ticketPrice}</span>
+            </p>
+
+            {/* Buttons Section */}
+            <div className="d-flex justify-content-center gap-2">
+              <button
+                className="btn btn-danger px-4"
+                style={{
+                  fontWeight: "bold",
+                  borderRadius: "30px",
+                }}
+                onClick={() => addToCart(item)}
+              >
+                Add
+              </button>
+              <Link to={`/details/${item.id}`}>
+                <button
+                  className="btn btn-primary px-4"
+                  style={{
+                    fontWeight: "bold",
+                    borderRadius: "30px",
+                  }}
+                >
+                  View
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
+
        
 
     {movies.map((popup) => (
@@ -191,6 +257,7 @@ export default function Fetchdata({search}) {
               </ul>
              <i onClick={handleclose} class="fas fa-times cancel-icon"></i> 
               </div>
+              
               </div>
             </div>
           </div>

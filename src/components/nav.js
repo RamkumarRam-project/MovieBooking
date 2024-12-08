@@ -1,82 +1,64 @@
-import { useContext,  } from "react";
+import { useContext, useState } from "react";
 import { Link, } from "react-router-dom";
 import { CartContext } from "./addcard";
 
 
+const Nav = ({ search, setSearch }) => {
+  const [isOpen, setIsOpen] = useState(false); // State for toggle menu
+  const { count } = useContext(CartContext);
 
-function Nav({search,setSearch}){
-  
-  
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-  
-  const {count}=useContext(CartContext)
-  
-   
-    return(
-        <>
-    
-          <nav className="navbar navbar-expand-md navbar-dark bg-secondary  bg-gradient position-sticky top-0 z-1">
-           <h2 className="namedesign">Ram</h2>
-            <button
-              className="navbar-toggler nav-btn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span className="navbar-toggler-icon "></span>
-            </button>
-            <div className="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul className="navbar-nav ms-3">
-                <li className="nav-item">
-                <Link to="/" className="nav-link">Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/about" className="nav-link"> 
-                     About Us
-                  </Link> 
-                </li>
-                <li className="nav-item">
-                  <Link to="/contact" className="nav-link">
-                     Contact Us
-                  </Link>
-          
-                </li>
-                <li className="nav-item">
-                   <Link to="/login" className="nav-link text-info">
-                     <i style={{color:"#28D146"}} className="fa-solid fa-user-plus mx-2"></i>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="d-flex align-items-center px-5 me-auto">
-        
-          
-       
-            <div className="input">
-              <input type="search"  value={search} placeholder="Search Movies..." onChange={(e) => setSearch(e.target.value)}/>
+  return (
+    <nav className="custom-navbar">
+    <div className="logo">
+      <span className="logo-name">RAM </span>
+</div>
+
+
+
       
-              </div>
-       
-        <Link to="/viewdata" className="nav-link position-relative">
-        <i class="fa-solid fa-cart-shopping nav-shop "></i>
-         
-            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              {count}
-            </span>
-         
+      {/* Add a dynamic class for toggling the navbar links */}
+      <div className={`navbar-links ${isOpen ? "show" : ""}`}>
+        <ul>
+          <li>
+            <Link to="/" className="nav-link">Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className="nav-link">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="nav-link">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/userboard" className="nav-link">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/moviestamil" className="nav-link">TamilMovies</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-extras">
+        <div className="search-bar">
+          <input
+            type="search"
+            value={search}
+            placeholder="Search Movies..."
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+        <Link to="/viewdata" className="cart-link">
+          <i className="fa-solid fa-cart-shopping"></i>
+          <span className="cart-badge">{count}</span>
         </Link>
       </div>
-          </nav>
-        
-  
-
-
-
-
-
-    
-        </>
-    )
-  }
+      <button onClick={toggleMenu} className="menu-toggle" type="button">
+        <i id="navicon" className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
+      </button>
+    </nav>
+  );
+};
 
 export default Nav;
