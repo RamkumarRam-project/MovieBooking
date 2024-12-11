@@ -1,9 +1,14 @@
+import Logo from "./logo";
 
 
 function AbousUs(){
   return(
     <>
       <div className="container about-me-section mt-5">
+
+      <Logo/>
+
+       
   <div className="row align-items-center mb-5">
    
     <div className="col-md-6 text-center">

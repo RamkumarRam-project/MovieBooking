@@ -1,6 +1,7 @@
 // import { useEffect, useState } from "react";
 import {useParams} from 'react-router-dom'
  import datas from './Movies.json'
+import Logo from './logo';
 
 function Details(){
     const { id } = useParams();
@@ -21,7 +22,8 @@ function Details(){
     
    return(
     <>
-      
+      <Logo/>
+
      <div className="container mt-5 details-container">
   <div className="row g-4 align-items-center">
     {/* Left Column: Movie Image */}

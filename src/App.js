@@ -8,12 +8,16 @@ import CartView from './components/viewdata';
 import { BrowserRouter as Router, Route,  Routes, Navigate} from 'react-router-dom';
 import AbousUs from './components/about';
 import Footer from './components/footer';
-import ContactUs from './components/contact';
 import { CartProvider } from './components/addcard';
 import { Toaster } from 'react-hot-toast';
 import { useState } from 'react';
 import UserDashboard from './components/userboard';
-import TamilMovies from './components/moviestamil';
+import Popular from './components/API Movies/popular';
+import Toprate from './components/API Movies/toprate';
+import Playing from './components/API Movies/playing';
+import Upcoming from './components/API Movies/upcoming';
+
+
 
 
 
@@ -40,8 +44,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Fetchdata search={search} />} />
                 <Route path="/about" element={<AbousUs/>} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path='/moviestamil' element={<TamilMovies/>}/>
+                <Route path='/popular' element={<Popular />}/>
+                <Route path='/toprate' element={<Toprate />}/>
+                <Route path='/playing' element={<Playing/>}/>
+                <Route path='/upcoming' element={<Upcoming/>}/>
                 <Route path="/viewdata" element={<CartView />} />
                 <Route path="/details/:id" element={<Details />} />
                 <Route path="/userboard" element={<UserDashboard/>}/>

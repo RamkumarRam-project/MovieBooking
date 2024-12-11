@@ -90,6 +90,8 @@ import { Card } from 'antd';
 import { useContext } from 'react';
 import { CartContext } from './addcard';
 import movies from './Movies.json';
+import Logo from './logo';
+
 
 const { Meta } = Card;
 
@@ -131,14 +133,10 @@ export default function Fetchdata({search}) {
 }
   return (
     <>  
-      {/* <div className='home-top'>
-           <div  className='top-name text-center mt-3'>
-             <h4 className='cinema-title'>RAM__CINEMAS</h4>
-           </div>  
-           </div>
-     */}
      
-     <div className="container mt-5">
+     
+     <div className="container mt-3">
+       <Logo/>
   <div className="row gy-4">
     {alldata.map((item) => (
       <div
@@ -150,7 +148,6 @@ export default function Fetchdata({search}) {
           style={{
             borderRadius: "15px",
             overflow: "hidden",
-            background: "linear-gradient(to bottom, #ffffff, #f0f0f0)",
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
           }}
         >
@@ -186,10 +183,10 @@ export default function Fetchdata({search}) {
           </div>
 
           {/* Content Section */}
-          <div className="p-4 text-center">
+          <div className="p-2 content-sec">
             <h5
               className="text-dark text-truncate"
-              style={{ fontWeight: "bold", marginBottom: "10px" }}
+              style={{ fontWeight: "bold", marginBottom: "10px"}}
             >
               {item.title}
             </h5>
@@ -201,7 +198,7 @@ export default function Fetchdata({search}) {
             {/* Buttons Section */}
             <div className="d-flex justify-content-center gap-2">
               <button
-                className="btn btn-danger px-4"
+                className="btn btn-danger"
                 style={{
                   fontWeight: "bold",
                   borderRadius: "30px",
@@ -212,7 +209,7 @@ export default function Fetchdata({search}) {
               </button>
               <Link to={`/details/${item.id}`}>
                 <button
-                  className="btn btn-primary px-4"
+                  className="btn btn-primary"
                   style={{
                     fontWeight: "bold",
                     borderRadius: "30px",

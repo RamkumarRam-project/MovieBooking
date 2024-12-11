@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from './addcard';
+import Logo from './logo';
 
 
 
@@ -10,9 +11,16 @@ const CartView = () => {
 
   return (
     <div className="container payment text-center py-4">
-    <p className="text-info fs-5">Total Items: {count}</p>
-    <h3 className="text-danger fs-4 mb-4">Total Amount: ${totalAmount}</h3>
-    
+      <Logo/>
+      <div className='row'>
+        <div className='col-sm-6 total-amt'>
+          <p className="text-info fs-5">Items:{count}</p>
+          </div>
+          <div className='col-sm-6 total-amt'>
+          <h3 className="text-danger fs-5 mb-4">Amount:${totalAmount}</h3>
+          </div>
+      </div>
+
     <div className="row gy-4">
       {cartItems.map((item) => (
         <div className="col-12" key={item.id}>
@@ -26,8 +34,8 @@ const CartView = () => {
                   className="img-fluid rounded"
                   style={{
                     maxHeight: "250px",
-                    objectFit: "cover",
-                    width: "100%",
+                    width:"100%",
+                    objectFit:"contain"
                   }}
                 />
               </div>

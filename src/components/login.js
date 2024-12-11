@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import Logo from './logo';
 
 
 const LoginForm = ({ setIsLoggedIn }) => {
@@ -33,10 +34,11 @@ const LoginForm = ({ setIsLoggedIn }) => {
   return (
 
    <>
-    <div className="d-flex justify-content-center align-items-center vh-100  loginform">
+    <div className="d-flex justify-content-center align-items-center vh-100  loginform" >
       <div className="card p-4 shadow-lg" style={{ width: '400px' }}>
       
-        <h2 className="text-center mb-4">RAM CINEMAS</h2>
+       <Logo/>
+       
         <form onSubmit={handleSubmit} >
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address:</label>
@@ -50,7 +52,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3" >
             <label htmlFor="password" className="form-label">Password:</label>
             <input
               type="password"

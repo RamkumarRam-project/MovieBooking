@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "./logo";
 
 const UserDashboard = () => {
   // Mock data for booked tickets
@@ -28,7 +29,10 @@ const UserDashboard = () => {
   };
 
   return (
+    
     <div className="user-dashboard">
+
+       <Logo/>
       <h2>Welcome to Your Dashboard</h2>
       <div className="dashboard-content">
         {tickets.length > 0 ? (
