@@ -14,8 +14,7 @@ const Nav = ({ search, setSearch }) => {
   const toggleDropdown = () => setOpendrop((prev) => !prev);
 
   const Navigate = useNavigate();
-  const location = useLocation();
-  const ishomepage = location.pathname === "/";
+  
 
   const handleNavigate = (path) => {
     Navigate(path);
@@ -37,7 +36,8 @@ const Nav = ({ search, setSearch }) => {
               <li onClick={() => handleNavigate("/popular")} className="dropdown-item">
                 Popular
               </li>
-              <li onClick={() => handleNavigate("/toprate")} className="dropdown-item">
+              
+              <li onClick={() => handleNavigate("/toprates")} className="dropdown-item">
                 Top-Rated
               </li>
               <li onClick={() => handleNavigate("/playing")} className="dropdown-item">
@@ -46,6 +46,9 @@ const Nav = ({ search, setSearch }) => {
               <li onClick={() => handleNavigate("/upcoming")} className="dropdown-item">
                 Upcoming
               </li>
+              <li onClick={() => handleNavigate("/on_the_air")} className="dropdown-item">
+               Now-Watching
+             </li>
             </ul>
           )}
      
@@ -64,7 +67,9 @@ const Nav = ({ search, setSearch }) => {
         </ul>
       </div>
 
-      <i onClick={toggleDropdown} className="nav-drop fa-solid fa-caret-down fs-3"></i>
+      <i onClick={toggleDropdown} className="nav-drop fas fa-video">
+        <span className="nav-free">Free</span>
+      </i>
       
       {/* <div className="navbar-extras">
         <div className="search-bar">
@@ -94,3 +99,33 @@ const Nav = ({ search, setSearch }) => {
 };
 
 export default Nav;
+
+
+{/** </li>
+              <li onClick={() => handleNavigate("/tv_changes")} className="dropdown-item">
+              Crime
+              </li>
+              <li onClick={() => handleNavigate("/tv_fav")} className="dropdown-item">
+              tv_fav
+              </li>
+              <li onClick={() => handleNavigate("/tv_movie")} className="dropdown-item">
+              tv_movie
+              </li>
+              <li onClick={() => handleNavigate("/tv_list")} className="dropdown-item">
+              tv_list
+              </li>
+              <li onClick={() => handleNavigate("/rated/movies")} className="dropdown-item">
+              /rated/movies
+              </li>
+              <li onClick={() => handleNavigate("/rated/tv")} className="dropdown-item">
+              /rated/tv
+              </li>
+              <li onClick={() => handleNavigate("/tv/episodes")} className="dropdown-item">
+              /tv/episodes
+              </li>
+              <li onClick={() => handleNavigate("/watchlist/movies")} className="dropdown-item">
+              watchlist/movies
+              </li>
+              <li onClick={() => handleNavigate("/watchlist/tv")} className="dropdown-item">
+              watchlist/tv
+              </li>x */}

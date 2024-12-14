@@ -20,68 +20,67 @@ function Details(){
     //  },[_id]);
 
     
-   return(
+  return(
     <>
-      <Logo/>
+          <Logo/>
 
-     <div className="container mt-5 details-container">
-  <div className="row g-4 align-items-center">
-    {/* Left Column: Movie Image */}
-    <div className="col-sm-12 col-md-6">
-      <div className="movie-image-container shadow-lg rounded">
-        <img
-          src={movie.image}
-          alt={movie.name}
-          className="img-fluid rounded"
-          style={{
-            width: "100%",
-            objectFit: "cover",
-          }}
-        />
-      </div>
-    </div>
-
-    {/* Right Column: Movie Details */}
-    <div className="col-sm-12 col-md-6">
-      <div className="details-content p-4 shadow rounded">
-        <h2 className="movie-title text-primary">
-          {movie.title} ({movie.releaseYear})
-        </h2>
-        <h5 className="title-sec text-muted">
-          Starring: {movie.hero} & {movie.heroine}
-        </h5>
-        <p className="mt-3">
-          <span className="fw-bold">About:</span> {movie.description}
-        </p>
-        <div className="movie-info mt-4">
-          <h6>
-            <span className="text-danger">Budget:</span> {movie.budget}
-          </h6>
-          <h6>
-            <span className="text-danger">Release Date:</span> {movie.releaseDate}
-          </h6>
-          <h6>
-            <span className="text-danger">Director:</span> {movie.director}
-          </h6>
+<div className="row m-0">
+       <div className="col-sm-6">
+         <div className="">
+           <img
+             src={movie.image}
+             alt={movie.title}
+             className="details-img mb-3"
+             width={"100%"}
+           />
+           </div>
         </div>
-        <button
-          className="btn btn-primary mt-4 px-5"
-          style={{
-            fontWeight: "bold",
-            borderRadius: "30px",
-          }}
-        >
-          Book Now
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
-   
-                    
+          
+           <div className="col-sm-6">
+           <table className="table w-100  ">
+             <tbody>
+               <tr>
+                 <th>Hero</th>
+                 <td>{movie.hero}</td>
+               </tr>
+               <tr>
+                 <th>Heroine</th>
+                 <td>{movie.heroine}</td>
+               </tr>
+               <tr>
+                 <th>Rating</th>
+                 <td>{movie.rating}</td>
+               </tr>
+               <tr>
+                 <th>Budget</th>
+                 <td>{movie.budget}</td>
+               </tr>
+               <tr>
+                 <th>ReleaseDate</th>
+                 <td>{movie.releaseDate}</td>
+               </tr>
+               <tr>
+                 <th>TicketPrice</th>
+                 <td>{movie.ticketPrice}</td>
+               </tr>
+               <tr>
+                 <th>Director</th>
+                 <td>{movie.director}</td>
+               </tr>
+               <tr>
+                 <th>Showtimes</th>
+                 <td>{movie.showtimes}</td>
+               </tr>
+             </tbody>
+           </table>
+           <p className='text-secondary'><span className='text-dark fs-5 fw-1'>About Me : </span>{movie.description}</p>
+           </div>
+         </div>
+     
     </>
-   )
+  )
+   
 }
 
 export default Details;
