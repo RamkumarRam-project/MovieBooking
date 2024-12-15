@@ -1,54 +1,60 @@
-import React, { useState, useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from "../logo";
-import Loading from "../loading";
-import axios from "axios";
 
-
-
-
-const ApiMovieList = ({ api ,titles}) => {
- 
+const IndianMovies = ({ languageCode }) => {
   const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(true);
-
+  const [error, setError] = useState("");
+  const [movieCount, setMovieCount] = useState(0);
+  
   const Navigate =useNavigate();
-  const handleNavigate = (path) => {
-    Navigate(path);
-   
+    const handleNavigate = (path) => {
+      Navigate(path);
+     
+    };
+  const API_KEY = "dc8590b523351030b3156742702ba392"; 
+
+  
+  const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=${languageCode}&sort_by=popularity.desc`;
+
+  // Fetch Indian language movies
+  const fetchIndianMovies = async () => {
+    let allMovies = [];
+    let currentPage = 1;
+    let totalMovies = 0;
+
+    try {
+      while (allMovies.length < 150) { // Ensure you get at least 150 movies
+        const response = await fetch(`${API_URL}&page=${currentPage}`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch movies.");
+        }
+
+        const data = await response.json();
+
+        // Add movies to the list
+        allMovies = [...allMovies, ...data.results];
+        if (allMovies.length >= 150) break;
+
+        currentPage++;
+      }
+
+      setMovies(allMovies);
+      setMovieCount(allMovies.length);
+    } catch (err) {
+      setError(err.message || "Something went wrong.");
+      setMovieCount(0);
+    }
   };
 
-  
-  
-  const API_KEY = "dc8590b523351030b3156742702ba392"; 
-  const BASE_URL = "https://api.themoviedb.org/3/";
-
-
   useEffect(() => {
-    const fetchMovies = async () => {
-      setLoading(true);
-      try {
-        const API_URL = `${BASE_URL}${api}?api_key=${API_KEY}`;
-        const response = await axios.get(API_URL);
-        setMovies(response.data.results || []);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching movies:", error);
-        setLoading(false);
-      }
-    };
+    if (languageCode) {
+      fetchIndianMovies();
+    }
+  }, [languageCode]); // Trigger fetch whenever languageCode changes
 
-    fetchMovies();
-  }, [api]); 
-
-  if(loading)return <Loading LoadName="RAM CINEMAS"/>
-
-  
   return (
     <div>
-
-      <Logo/>
-      <h4 className="text-primary text-center pb-3">{titles}</h4>
+      <h4 className="text-primary text-center pb-3">All-Indian</h4>
         <div className="container">
             <div className="row">
           {movies.map((movie) => (
@@ -77,8 +83,8 @@ const ApiMovieList = ({ api ,titles}) => {
                 
                 
              <p className="movie-rating">
-              
-              <i className="far fa-comment comment-up" ></i>{movie.vote_average} |
+                
+             <i className="far fa-comment comment-up" ></i>{movie.vote_average} |
                
                <i className="far fa-thumbs-up comment-ups"></i> {movie.vote_count}
               
@@ -101,7 +107,8 @@ const ApiMovieList = ({ api ,titles}) => {
       </div>
       </div>
     </div>
+   
   );
 };
 
-export default ApiMovieList;
+export default IndianMovies;

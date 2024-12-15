@@ -960,11 +960,12 @@ button:hover {
 }
 
 .movie-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: lighter;
   margin-bottom: 20px;
   text-align: center;
   color:dodgerblue;
+  font-family: cursive;
 }
 
 .poster-section {
@@ -1089,4 +1090,25 @@ a{
   font-weight:lighter;
   color: #ff7979;
   font-family: 'Lobster',cursive;
+}
+.stock-available {
+  color: green;
+  font-weight: bold;
+}
+
+.stock-unavailable {
+  color: black;
+  font-weight: normal;
+}
+.comment-up{
+  color: gold;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.comment-ups{
+  color: skyblue;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
