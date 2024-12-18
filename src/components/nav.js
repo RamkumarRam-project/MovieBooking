@@ -5,7 +5,7 @@ import { CartContext } from "./addcard";
 
 
 
-const Nav = ({ onLogout, setSearch }) => {
+const Nav = ({ onLogout}) => {
   const [isOpen, setIsOpen] = useState(false); // State for toggling the menu
   const [opendrop, setOpendrop] = useState(false); // State for dropdown
   const { count } = useContext(CartContext);
@@ -37,7 +37,7 @@ const Nav = ({ onLogout, setSearch }) => {
               <li onClick={() => handleNavigate("/movie/tamil")} className="dropdown-item">
                 Tamil-Movies
               </li>
-              <li onClick={() => handleNavigate("/movie/hindi")} className="dropdown-item">
+              <li onClick={() => handleNavigate("/movie/all-indian")} className="dropdown-item">
                 All-Indian
               </li>
               <li onClick={() => handleNavigate("/popular")} className="dropdown-item">
@@ -46,9 +46,6 @@ const Nav = ({ onLogout, setSearch }) => {
               
               <li onClick={() => handleNavigate("/toprates")} className="dropdown-item">
                 Top-Rated
-              </li>
-              <li onClick={() => handleNavigate("/playing")} className="dropdown-item">
-                Now-Playing
               </li>
               <li onClick={() => handleNavigate("/upcoming")} className="dropdown-item">
                 Upcoming
@@ -79,7 +76,7 @@ const Nav = ({ onLogout, setSearch }) => {
             <Link to="/userboard" className="nav-link">Dashboard</Link>
           </li>
           <li>
-          <button className="btn btn-secondary" onClick={onLogout}>
+          <button className="btn bg-white text-danger log-btn" onClick={onLogout}>
              Logout
           </button>
 

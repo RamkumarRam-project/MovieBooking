@@ -27,19 +27,38 @@ const ApiMovieList = ({ api ,titles}) => {
   useEffect(() => {
     const fetchMovies = async () => {
       setLoading(true);
+      let allMovies = [];
+      let currentPage = 1;
+      const totalPagesToFetch = 50; // 50 pages x 20 results = 1000 movies
+
       try {
-        const API_URL = `${BASE_URL}${api}?api_key=${API_KEY}`;
-        const response = await axios.get(API_URL);
-        setMovies(response.data.results || []);
-        setLoading(false);
+        while (allMovies.length < 1000 && currentPage <= totalPagesToFetch) {
+          const API_URL = `${BASE_URL}${api}?api_key=${API_KEY}&page=${currentPage}`;
+          const response = await axios.get(API_URL);
+
+          if (response.data && response.data.results) {
+            allMovies = [...allMovies, ...response.data.results];
+          }
+
+          // Break if no more movies are available
+          if (currentPage >= response.data.total_pages) {
+            break;
+          }
+
+          currentPage++;
+        }
+
+        setMovies(allMovies.slice(0, 1000)); // Limit the list to exactly 1000 movies
       } catch (error) {
         console.error("Error fetching movies:", error);
+      } finally {
         setLoading(false);
       }
     };
 
     fetchMovies();
-  }, [api]); 
+  }, [api]);
+
 
   if(loading)return <Loading LoadName="RAM CINEMAS"/>
 
@@ -78,10 +97,20 @@ const ApiMovieList = ({ api ,titles}) => {
                 
              <p className="movie-rating">
               
-              <i className="far fa-comment comment-up" ></i>{movie.vote_average} |
-               
-               <i className="far fa-thumbs-up comment-ups"></i> {movie.vote_count}
-              
+             <div className="d-flex cont-sec-1">
+              <p className="movie-rating">
+              <i className="far fa-comment comment-up"></i>
+              {movie.vote_average > 100
+              ? `${(movie.vote_average / 100).toFixed(1)}k`
+               : movie.vote_average.toFixed(1)} | 
+      
+             <i className="far fa-thumbs-up comment-ups"></i> 
+             {movie.vote_count > 100
+             ? `${(movie.vote_count / 100).toFixed(1)}k`
+             : movie.vote_count.toFixed(1)}
+            </p>
+            </div>
+
                 </p>
 
              </div>

@@ -14,7 +14,8 @@ import UserDashboard from './components/userboard';
 import ApiMovieList from './components/API Movies/apimovielist';
 import Apidetails from './components/API Movies/apidetails';
 import TamilMovies from './components/tamil';
-import IndianMovies from './components/API Movies/hindi';
+import IndianMovies from './components/API Movies/indianmovies';
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Login state
@@ -50,13 +51,13 @@ function App() {
                 <Route path="/userboard" element={<UserDashboard />} />
                 <Route path="/movie/:id" element={<Apidetails />} />
                 <Route path="/movie/tamil" element={<TamilMovies />} />
-                <Route path="/movie/hindi" element={<IndianMovies languageCode="ml" />} />
+                <Route path="/movie/all-indian" element={<IndianMovies languageCode="ml" />} />
+                
 
                 {/* API Path Routes */}
-                <Route path="/popular" element={<ApiMovieList api="movie/popular" titles="Popular" />} />
+                <Route path="/popular" element={<ApiMovieList api="movie/popular" titles="Popular" LoadName="RAM-Popular"/>} />
                 <Route path="/upcoming" element={<ApiMovieList api="movie/upcoming" titles="Upcoming" />} />
                 <Route path="/toprates" element={<ApiMovieList api="movie/top_rated" titles="Top-Rated" />} />
-                <Route path="/playing" element={<ApiMovieList api="movie/now_playing" titles="Playing" />} />
                 <Route path="/on_the_air" element={<ApiMovieList api="tv/on_the_air" titles="Now-Watching" />} />
                 <Route path="/trending/all/day" element={<ApiMovieList api="trending/all/day" titles="Trending-All-Day" />} />
                 <Route path="/trending/movie/day" element={<ApiMovieList api="trending/movie/day" titles="Trending-Movie" />} />

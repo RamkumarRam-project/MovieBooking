@@ -72,7 +72,7 @@ function ApiDetails() {
       return (num / 1000000).toFixed(1) + 'M';  // Millions
     } else if (num >= 1000) {
       return (num / 1000).toFixed(1) + 'core';  // Thousands
-    } else {
+      } else {
       return num;  // Less than 1000
     }
   };
